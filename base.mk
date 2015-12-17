@@ -3,7 +3,7 @@
 QCOM_BOARD_PLATFORMS += msm8994
 QCOM_BOARD_PLATFORMS += msm8992
 
-TARGET_USE_VENDOR_CAMERA_EXT := true
+#TARGET_USE_VENDOR_CAMERA_EXT := true
 ANDROID_COMPILE_WITH_JACK := false
 
 #List of targets that use video hw
@@ -145,6 +145,9 @@ DASH := libdashplayer
 DASH += libqcmediaplayer
 DASH += qcmediaplayer
 DASH += libextmedia_jni
+
+#E2FSPROGS
+E2FSPROGS := e2fsck
 
 #EXTENDEDMEDIA_EXT
 EXTENDEDMEDIA_EXT := libextendedmediaextractor
@@ -299,25 +302,25 @@ LIB_NL := libnl_2
 LIB_XML2 := libxml2
 
 #LIBCAMERA
-LIBCAMERA := camera.apq8084
-LIBCAMERA += camera.msm8974
-LIBCAMERA += camera.msm8226
-LIBCAMERA += camera.msm8610
-LIBCAMERA += camera.msm8960
-LIBCAMERA += camera.msm8660
-LIBCAMERA += camera.msm7630_surf
-LIBCAMERA += camera.msm7630_fusion
-LIBCAMERA += camera.msm7627a
-LIBCAMERA += camera.msm8916
-LIBCAMERA += camera.msm8994
-LIBCAMERA += camera.msm8992
-LIBCAMERA += libcamera
-LIBCAMERA += libmmcamera_interface
-LIBCAMERA += libmmcamera_interface2
-LIBCAMERA += libmmjpeg_interface
-LIBCAMERA += libqomx_core
-LIBCAMERA += mm-qcamera-app
-LIBCAMERA += camera_test
+#LIBCAMERA := camera.apq8084
+#LIBCAMERA += camera.msm8974
+#LIBCAMERA += camera.msm8226
+#LIBCAMERA += camera.msm8610
+#LIBCAMERA += camera.msm8960
+#LIBCAMERA += camera.msm8660
+#LIBCAMERA += camera.msm7630_surf
+#LIBCAMERA += camera.msm7630_fusion
+#LIBCAMERA += camera.msm7627a
+#LIBCAMERA += camera.msm8916
+#LIBCAMERA += camera.msm8994
+#LIBCAMERA += camera.msm8992
+#LIBCAMERA += libcamera
+#LIBCAMERA += libmmcamera_interface
+#LIBCAMERA += libmmcamera_interface2
+#LIBCAMERA += libmmjpeg_interface
+#LIBCAMERA += libqomx_core
+#LIBCAMERA += mm-qcamera-app
+#LIBCAMERA += camera_test
 LIBCAMERA += org.codeaurora.camera
 
 #LIBCOPYBIT
@@ -811,8 +814,8 @@ PRODUCT_PACKAGE_OVERLAYS += device/qcom/common/product/overlay
 -include frameworks/base/data/videos/VideoPackage1.mk
 
 # dm-verity definitions
-PRODUCT_SYSTEM_VERITY_PARTITION=/dev/block/bootdevice/by-name/system
-$(call inherit-product, build/target/product/verity.mk)
+#PRODUCT_SYSTEM_VERITY_PARTITION=/dev/block/bootdevice/by-name/system
+#$(call inherit-product, build/target/product/verity.mk)
 
 #skip boot jars check
 SKIP_BOOT_JARS_CHECK := true
