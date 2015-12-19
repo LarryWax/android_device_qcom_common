@@ -437,7 +437,7 @@ LIBOVERLAY += overlay.default
 LIBGENLOCK := libgenlock
 
 #LIBPERFLOCK
-LIBPERFLOCK := org.codeaurora.Performance
+#LIBPERFLOCK := org.codeaurora.Performance
 
 #LIBQCOMUI
 LIBQCOMUI := libQcomUI
