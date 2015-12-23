@@ -303,25 +303,25 @@ LIB_NL := libnl_2
 LIB_XML2 := libxml2
 
 #LIBCAMERA
-#LIBCAMERA := camera.apq8084
-#LIBCAMERA += camera.msm8974
-#LIBCAMERA += camera.msm8226
-#LIBCAMERA += camera.msm8610
-#LIBCAMERA += camera.msm8960
-#LIBCAMERA += camera.msm8660
-#LIBCAMERA += camera.msm7630_surf
-#LIBCAMERA += camera.msm7630_fusion
-#LIBCAMERA += camera.msm7627a
-#LIBCAMERA += camera.msm8916
-#LIBCAMERA += camera.msm8994
-#LIBCAMERA += camera.msm8992
-#LIBCAMERA += libcamera
-#LIBCAMERA += libmmcamera_interface
-#LIBCAMERA += libmmcamera_interface2
-#LIBCAMERA += libmmjpeg_interface
-#LIBCAMERA += libqomx_core
-#LIBCAMERA += mm-qcamera-app
-#LIBCAMERA += camera_test
+LIBCAMERA := camera.apq8084
+LIBCAMERA += camera.msm8974
+LIBCAMERA += camera.msm8226
+LIBCAMERA += camera.msm8610
+LIBCAMERA += camera.msm8960
+LIBCAMERA += camera.msm8660
+LIBCAMERA += camera.msm7630_surf
+LIBCAMERA += camera.msm7630_fusion
+LIBCAMERA += camera.msm7627a
+LIBCAMERA += camera.msm8916
+LIBCAMERA += camera.msm8994
+LIBCAMERA += camera.msm8992
+LIBCAMERA += libcamera
+LIBCAMERA += libmmcamera_interface
+LIBCAMERA += libmmcamera_interface2
+LIBCAMERA += libmmjpeg_interface
+LIBCAMERA += libqomx_core
+LIBCAMERA += mm-qcamera-app
+LIBCAMERA += camera_test
 LIBCAMERA += org.codeaurora.camera
 
 #LIBCOPYBIT
@@ -437,7 +437,7 @@ LIBOVERLAY += overlay.default
 LIBGENLOCK := libgenlock
 
 #LIBPERFLOCK
-#LIBPERFLOCK := org.codeaurora.Performance
+LIBPERFLOCK := org.codeaurora.Performance
 
 #LIBQCOMUI
 LIBQCOMUI := libQcomUI
