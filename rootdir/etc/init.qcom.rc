@@ -34,6 +34,9 @@ on early-init
     insmod /sbin/qdrbg_module.ko
 
 on init
+
+    chmod 0660 /dev/smem_log
+
     start qfintverify
     # Set permissions for persist partition
     mkdir /persist 0771 system system
