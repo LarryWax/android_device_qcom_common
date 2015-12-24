@@ -35,6 +35,11 @@ on early-init
 
 on init
 
+    # Preload the BoringSSL wrapper
+    export LD_PRELOAD "libboringssl-compat.so"
+
+    export LD_SHIM_LIBS "/system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so:/system/lib/hw/camera.msm8994.so|/system/lib/libcamera_shim.so:/system/vendor/lib/libmmqjpeg_codec.so"
+
     chmod 0660 /dev/smem_log
 
     start qfintverify
