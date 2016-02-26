@@ -225,6 +225,7 @@ INIT += init.qcom.ril.path.sh
 INIT += init.qcom.usb.rc
 INIT += init.qcom.usb.sh
 INIT += usf_post_boot.sh
+INIT += usf_settings.sh
 INIT += init.qcom.efs.sync.sh
 INIT += ueventd.qcom.rc
 INIT += init.ath3k.bt.sh
@@ -799,9 +800,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
-    device/qcom/common/media/media_profiles.xml:system/etc/media_profiles.xml \
-    device/qcom/common/media/media_codecs.xml:system/etc/media_codecs.xml
+    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
+#    device/qcom/common/media/media_profiles.xml:system/etc/media_profiles.xml \
+#    device/qcom/common/media/media_codecs.xml:system/etc/media_codecs.xml
 
 # enable overlays to use our version of
 # source/resources etc.
@@ -818,8 +819,8 @@ PRODUCT_PACKAGE_OVERLAYS += device/qcom/common/product/overlay
 -include frameworks/base/data/videos/VideoPackage1.mk
 
 # dm-verity definitions
-PRODUCT_SYSTEM_VERITY_PARTITION=/dev/block/bootdevice/by-name/system
-$(call inherit-product, build/target/product/verity.mk)
+#PRODUCT_SYSTEM_VERITY_PARTITION=/dev/block/bootdevice/by-name/system
+#$(call inherit-product, build/target/product/verity.mk)
 
 #skip boot jars check
 SKIP_BOOT_JARS_CHECK := true
